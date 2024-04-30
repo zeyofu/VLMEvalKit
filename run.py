@@ -106,7 +106,7 @@ def main():
             else:
                 if DATASET_TYPE(dataset_name) in ['multi-choice', 'Y/N']:
                     judge_kwargs['model'] = 'chatgpt-0613'
-                elif listinstr(['MMVet', 'MathVista', 'LLaVABench'], dataset_name):
+                elif listinstr(['MMVet', 'MathVista', 'LLaVABench', 'BLINK'], dataset_name):
                     judge_kwargs['model'] = 'gpt-4-turbo'
             if 'OPENAI_API_KEY_JUDGE' in os.environ and len(os.environ['OPENAI_API_KEY_JUDGE']):
                 judge_kwargs['key'] = os.environ['OPENAI_API_KEY_JUDGE']
@@ -137,6 +137,8 @@ def main():
                     VQAEval(result_file, dataset_name)
                 elif listinstr(['MathVista'], dataset_name):
                     MathVista_eval(result_file, **judge_kwargs)
+                elif listinstr(['BLINK'], dataset_name):
+                    BLINK_eval(result_file, **judge_kwargs)
                 elif listinstr(['LLaVABench'], dataset_name):
                     LLaVABench_eval(result_file, **judge_kwargs)
                 else:
