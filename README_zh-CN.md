@@ -23,6 +23,8 @@
 
 ## 🆕 更新
 
+- **[2024-05-07]** 支持了 [**GPT-4o**](https://openai.com/index/hello-gpt-4o/) 🔥🔥🔥
+- **[2024-05-07]** 支持了 [**XVERSE-V-13B**](https://github.com/xverse-ai/XVERSE-V-13B/blob/main/vxverse/models/vxverse.py), 感谢 [**YJY123**](https://github.com/YJY123) 🔥🔥🔥
 - **[2024-05-06]** 成立了 VLMEvalKit 用户群组的 Discord 频道: https://discord.gg/evDT4GZmxN，将在这里分享关于 VLMEvalKit 的更新并进行讨论
 - **[2024-05-06]** 支持了两个基于 Llama3 的 VLM 🔥🔥🔥: Bunny-llama3-8B (SigLIP, 输入图像大小 384) 和 llava-llama-3-8b (CLIP-L, 输入图像大小 336), 用户可在我们支持的数十个测试基准上测试这两个模型
 - **[2024-04-28]** 支持了 [**MMBench V1.1**](https://arxiv.org/pdf/2307.06281)，在这个新版本中，我们提升了评测题目的质量与视觉的不可或缺性。如需获取测试集上的性能，请提交推理结果至 [**官方评测服务**](https://mmbench.opencompass.org.cn/mmbench-submission) 🔥🔥🔥
@@ -31,9 +33,6 @@
 - **[2024-04-21]** 修复了 MathVista 评估脚本的一个小问题（可能会对性能产生较小的负面影响），并相应更新了排行榜
 - **[2024-04-17]** 支持 [**InternVL-Chat-V1.5**](https://github.com/OpenGVLab/InternVL/) 🔥🔥🔥
 - **[2024-04-15]** 支持 [**RealWorldQA**](https://x.ai/blog/grok-1.5v)， 这是一个用于真实世界空间理解的多模态基准测试  🔥🔥🔥
-- **[2024-04-09]** 将 VLMs 推理接口重构为更统一的版本，请查看 [**#140**](https://github.com/open-compass/VLMEvalKit/pull/140) 获取更多详细信息。
-- **[2024-04-09]** 支持 [**MMStar**](https://github.com/MMStar-Benchmark/MMStar)，这是一个具有挑战性的视觉不可或缺的多模态基准测试 🔥🔥🔥
-- **[2024-04-08]** 支持 [**InfoVQA**](https://www.docvqa.org/datasets/infographicvqa) 和 [**DocVQA**](https://www.docvqa.org) 的测试集，特别感谢 [**DLight**](https://github.com/LightDXY) 🔥🔥🔥
 
 ## 📊 评测结果，支持的数据集和模型 <a id="data-model-results"></a>
 ### 评测结果
@@ -80,9 +79,9 @@
 | [**mPLUG-Owl2**](https://github.com/X-PLUG/mPLUG-Owl/tree/main/mPLUG-Owl2)🎞️ | [**OpenFlamingo-v2**](https://github.com/mlfoundations/open_flamingo)🎞️ | [**PandaGPT-13B**](https://github.com/yxuansu/PandaGPT)      | [**Qwen-VL**](https://huggingface.co/Qwen/Qwen-VL)🎞️🚅, [**Qwen-VL-Chat**](https://huggingface.co/Qwen/Qwen-VL-Chat)🎞️**🚅** |
 | [**VisualGLM-6B**](https://huggingface.co/THUDM/visualglm-6b)🚅 | [**InternLM-XComposer-7B**](https://huggingface.co/internlm/internlm-xcomposer-7b)🚅🎞️ | [**ShareGPT4V-[7B/13B]**](https://sharegpt4v.github.io)🚅     | [**TransCore-M**](https://github.com/PCIResearch/TransCore-M) |
 | [**LLaVA (XTuner)**](https://huggingface.co/xtuner/llava-internlm-7b)🚅 | [**CogVLM-17B-Chat**](https://huggingface.co/THUDM/cogvlm-chat-hf)🚅 | [**SharedCaptioner**](https://huggingface.co/spaces/Lin-Chen/Share-Captioner)🚅 | [**CogVLM-Grounding-Generalist**](https://huggingface.co/THUDM/cogvlm-grounding-generalist-hf)🚅 |
-| [**Monkey**](https://github.com/Yuliang-Liu/Monkey)🚅         | [**EMU2-Chat**](https://github.com/baaivision/Emu)🚅🎞️  | [**Yi-VL-[6B/34B]**](https://huggingface.co/01-ai/Yi-VL-6B)  | [**MMAlaya**](https://huggingface.co/DataCanvas/MMAlaya)🚅    |
-| [**InternLM-XComposer2-[1.8B/7B]**](https://huggingface.co/internlm/internlm-xcomposer2-vl-7b)🚅🎞️ | [**MiniCPM-[V1/V2]**](https://huggingface.co/openbmb/MiniCPM-V)🚅   | [**OmniLMM-12B**](https://huggingface.co/openbmb/OmniLMM-12B) | [**InternVL-Chat Series**](https://github.com/OpenGVLab/InternVL)🚅 |
-| [**DeepSeek-VL**](https://github.com/deepseek-ai/DeepSeek-VL/tree/main)🎞️ | [**LLaVA-NeXT**](https://llava-vl.github.io/blog/2024-01-30-llava-next/)🚅 | [**Bunny-Llama3**](https://huggingface.co/BAAI/Bunny-Llama-3-8B-V)🚅  |                                                              |
+| [**Monkey**](https://github.com/Yuliang-Liu/Monkey)🚅         | [**EMU2-Chat**](https://github.com/baaivision/Emu)🚅🎞️         | [**Yi-VL-[6B/34B]**](https://huggingface.co/01-ai/Yi-VL-6B)  | [**MMAlaya**](https://huggingface.co/DataCanvas/MMAlaya)🚅    |
+| [**InternLM-XComposer2-[1.8B/7B]**](https://huggingface.co/internlm/internlm-xcomposer2-vl-7b)🚅🎞️ | [**MiniCPM-[V1/V2]**](https://huggingface.co/openbmb/MiniCPM-V)🚅 | [**OmniLMM-12B**](https://huggingface.co/openbmb/OmniLMM-12B) | [**InternVL-Chat Series**](https://github.com/OpenGVLab/InternVL)🚅 |
+| [**DeepSeek-VL**](https://github.com/deepseek-ai/DeepSeek-VL/tree/main)🎞️ | [**LLaVA-NeXT**](https://llava-vl.github.io/blog/2024-01-30-llava-next/)🚅 | [**Bunny-Llama3**](https://huggingface.co/BAAI/Bunny-Llama-3-8B-V)🚅 | [**XVERSE-V-13B**](https://github.com/xverse-ai/XVERSE-V-13B/blob/main/vxverse/models/vxverse.py) |
 
 🎞️ 表示支持多图片输入。
 
@@ -94,7 +93,7 @@
 
 **请注意**，某些 VLM 可能无法在某些特定的 transformers 版本下运行，我们建议使用以下设置来评估对应的VLM:
 
-- **请用** `transformers==4.33.0` **来运行**: `Qwen series`, `Monkey series`, `InternLM-XComposer Series`, `mPLUG-Owl2`, `OpenFlamingo v2`, `IDEFICS series`, `VisualGLM`, `MMAlaya`, `SharedCaptioner`, `MiniGPT-4 series`, `InstructBLIP series`, `PandaGPT`.
+- **请用** `transformers==4.33.0` **来运行**: `Qwen series`, `Monkey series`, `InternLM-XComposer Series`, `mPLUG-Owl2`, `OpenFlamingo v2`, `IDEFICS series`, `VisualGLM`, `MMAlaya`, `SharedCaptioner`, `MiniGPT-4 series`, `InstructBLIP series`, `PandaGPT`, `VXVERSE`.
 - **请用** `transformers==4.37.0 ` **来运行**: `LLaVA series`, `ShareGPT4V series`, `TransCore-M`, `LLaVA (XTuner)`, `CogVLM Series`, `EMU2 Series`, `Yi-VL Series`, `MiniCPM-V series`, `OmniLMM-12B`, `DeepSeek-VL series`, `InternVL series`.
 - **请用** `transformers==4.39.0 ` **来运行**: `LLaVA-Next series`.
 - **请用** `transformers==4.40.0 ` **来运行**: `IDEFICS2`, `Bunny-Llama3`.
