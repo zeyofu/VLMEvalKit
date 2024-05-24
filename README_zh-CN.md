@@ -23,16 +23,16 @@
 
 ## 🆕 更新
 
-- **[2024-05-07]** 支持了 [**GPT-4o**](https://openai.com/index/hello-gpt-4o/) 🔥🔥🔥
+- **[2024-05-23]** 用户 [**binwang777**](https://github.com/binwang777/) 在 VLMEvalKit 中支持了 [**360VL-70B**](https://huggingface.co/qihoo360/360VL-70B)
+- **[2024-05-21]** 支持了 [**MiniCPM-Llama3-V2.5**](https://huggingface.co/openbmb/MiniCPM-Llama3-V-2_5), MiniCPM-V 系列最新的模型，拥有较大的性能提升。🔥🔥🔥
+- **[2024-05-15]** 支持了 [**PaliGemma-3B**](https://huggingface.co/google/paligemma-3b-pt-448), 一个谷歌开源的 3B 多模态模型。 🔥🔥🔥
+- **[2024-05-14]** 支持了 [**GPT-4o**](https://openai.com/index/hello-gpt-4o/) 🔥🔥🔥
 - **[2024-05-07]** 支持了 [**XVERSE-V-13B**](https://github.com/xverse-ai/XVERSE-V-13B/blob/main/vxverse/models/vxverse.py), 感谢 [**YJY123**](https://github.com/YJY123) 🔥🔥🔥
 - **[2024-05-06]** 成立了 VLMEvalKit 用户群组的 Discord 频道: https://discord.gg/evDT4GZmxN，将在这里分享关于 VLMEvalKit 的更新并进行讨论
 - **[2024-05-06]** 支持了两个基于 Llama3 的 VLM 🔥🔥🔥: Bunny-llama3-8B (SigLIP, 输入图像大小 384) 和 llava-llama-3-8b (CLIP-L, 输入图像大小 336), 用户可在我们支持的数十个测试基准上测试这两个模型
 - **[2024-04-28]** 支持了 [**MMBench V1.1**](https://arxiv.org/pdf/2307.06281)，在这个新版本中，我们提升了评测题目的质量与视觉的不可或缺性。如需获取测试集上的性能，请提交推理结果至 [**官方评测服务**](https://mmbench.opencompass.org.cn/mmbench-submission) 🔥🔥🔥
 - **[2024-04-28]** 支持 [**POPE**](https://github.com/AoiDragon/POPE), 这是一个目标幻觉问题检测的数据集 🔥🔥🔥
 - **[2024-04-25]** 支持了 [**Reka**](https://www.reka.ai), 这个 API 模型在 [**Vision-Arena**](https://huggingface.co/spaces/WildVision/vision-arena) 排名第一 🔥🔥🔥
-- **[2024-04-21]** 修复了 MathVista 评估脚本的一个小问题（可能会对性能产生较小的负面影响），并相应更新了排行榜
-- **[2024-04-17]** 支持 [**InternVL-Chat-V1.5**](https://github.com/OpenGVLab/InternVL/) 🔥🔥🔥
-- **[2024-04-15]** 支持 [**RealWorldQA**](https://x.ai/blog/grok-1.5v)， 这是一个用于真实世界空间理解的多模态基准测试  🔥🔥🔥
 
 ## 📊 评测结果，支持的数据集和模型 <a id="data-model-results"></a>
 ### 评测结果
@@ -80,8 +80,9 @@
 | [**VisualGLM-6B**](https://huggingface.co/THUDM/visualglm-6b)🚅 | [**InternLM-XComposer-7B**](https://huggingface.co/internlm/internlm-xcomposer-7b)🚅🎞️ | [**ShareGPT4V-[7B/13B]**](https://sharegpt4v.github.io)🚅     | [**TransCore-M**](https://github.com/PCIResearch/TransCore-M) |
 | [**LLaVA (XTuner)**](https://huggingface.co/xtuner/llava-internlm-7b)🚅 | [**CogVLM-17B-Chat**](https://huggingface.co/THUDM/cogvlm-chat-hf)🚅 | [**SharedCaptioner**](https://huggingface.co/spaces/Lin-Chen/Share-Captioner)🚅 | [**CogVLM-Grounding-Generalist**](https://huggingface.co/THUDM/cogvlm-grounding-generalist-hf)🚅 |
 | [**Monkey**](https://github.com/Yuliang-Liu/Monkey)🚅         | [**EMU2-Chat**](https://github.com/baaivision/Emu)🚅🎞️         | [**Yi-VL-[6B/34B]**](https://huggingface.co/01-ai/Yi-VL-6B)  | [**MMAlaya**](https://huggingface.co/DataCanvas/MMAlaya)🚅    |
-| [**InternLM-XComposer2-[1.8B/7B]**](https://huggingface.co/internlm/internlm-xcomposer2-vl-7b)🚅🎞️ | [**MiniCPM-[V1/V2]**](https://huggingface.co/openbmb/MiniCPM-V)🚅 | [**OmniLMM-12B**](https://huggingface.co/openbmb/OmniLMM-12B) | [**InternVL-Chat Series**](https://github.com/OpenGVLab/InternVL)🚅 |
+| [**InternLM-XComposer2-[1.8B/7B]**](https://huggingface.co/internlm/internlm-xcomposer2-vl-7b)🚅🎞️ | [**MiniCPM-[V1/V2/V2.5]**](https://huggingface.co/openbmb/MiniCPM-V)🚅 | [**OmniLMM-12B**](https://huggingface.co/openbmb/OmniLMM-12B) | [**InternVL-Chat Series**](https://github.com/OpenGVLab/InternVL)🚅 |
 | [**DeepSeek-VL**](https://github.com/deepseek-ai/DeepSeek-VL/tree/main)🎞️ | [**LLaVA-NeXT**](https://llava-vl.github.io/blog/2024-01-30-llava-next/)🚅 | [**Bunny-Llama3**](https://huggingface.co/BAAI/Bunny-Llama-3-8B-V)🚅 | [**XVERSE-V-13B**](https://github.com/xverse-ai/XVERSE-V-13B/blob/main/vxverse/models/vxverse.py) |
+| [**PaliGemma-3B**](https://huggingface.co/google/paligemma-3b-pt-448) 🚅 | [**360VL-70B**](https://huggingface.co/qihoo360/360VL-70B)  | | |
 
 🎞️ 表示支持多图片输入。
 
@@ -94,9 +95,8 @@
 **请注意**，某些 VLM 可能无法在某些特定的 transformers 版本下运行，我们建议使用以下设置来评估对应的VLM:
 
 - **请用** `transformers==4.33.0` **来运行**: `Qwen series`, `Monkey series`, `InternLM-XComposer Series`, `mPLUG-Owl2`, `OpenFlamingo v2`, `IDEFICS series`, `VisualGLM`, `MMAlaya`, `SharedCaptioner`, `MiniGPT-4 series`, `InstructBLIP series`, `PandaGPT`, `VXVERSE`.
-- **请用** `transformers==4.37.0 ` **来运行**: `LLaVA series`, `ShareGPT4V series`, `TransCore-M`, `LLaVA (XTuner)`, `CogVLM Series`, `EMU2 Series`, `Yi-VL Series`, `MiniCPM-V series`, `OmniLMM-12B`, `DeepSeek-VL series`, `InternVL series`.
-- **请用** `transformers==4.39.0 ` **来运行**: `LLaVA-Next series`.
-- **请用** `transformers==4.40.0 ` **来运行**: `IDEFICS2`, `Bunny-Llama3`.
+- **请用** `transformers==4.37.0 ` **来运行**: `LLaVA series`, `ShareGPT4V series`, `TransCore-M`, `LLaVA (XTuner)`, `CogVLM Series`, `EMU2 Series`, `Yi-VL Series`, `MiniCPM-V (v1, v2)`, `OmniLMM-12B`, `DeepSeek-VL series`, `InternVL series`.
+- **请用** `transformers==4.40.0 ` **来运行**: `IDEFICS2`, `Bunny-Llama3`, `MiniCPM-Llama3-V2.5`, `LLaVA-Next series`, `360VL-70B`.
 
 **如何测试一个 VLM 是否可以正常运行:**
 
@@ -133,6 +133,10 @@ print(ret)  # 提供的图片中有两个苹果
 2. 默认情况下，我们对所有多模态模型使用相同的提示模板来评估基准测试。同时，**一些多模态模型可能有他们特定的提示模板**（目前可能未在代码库中涵盖）。我们鼓励 VLM 的开发人员在 VLMEvalKit 中实现自己的提示模板，如果目前未覆盖。这将有助于提高可复现性。
 
 ## 🖊️ 引用 <a id="citation"></a>
+
+如果我们的工作对您有所帮助，请考虑 **star🌟** VLMEvalKit。感谢支持！
+
+[![Stargazers repo roster for @open-compass/VLMEvalKit](https://reporoster.com/stars/open-compass/VLMEvalKit)](https://github.com/open-compass/VLMEvalKit/stargazers)
 
 如果您在研究中使用了 VLMEvalKit，或希望参考已发布的开源评估结果，请使用以下 BibTeX 条目以及与您使用的特定 VLM / 基准测试相对应的 BibTex 条目。
 

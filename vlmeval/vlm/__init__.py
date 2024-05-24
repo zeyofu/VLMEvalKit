@@ -8,7 +8,7 @@ from .emu import Emu
 from .idefics import IDEFICS, IDEFICS2
 from .instructblip import InstructBLIP
 from .llava import LLaVA, LLaVA_Next, LLaVA_XTuner
-from .minicpm_v import MiniCPM_V
+from .minicpm_v import MiniCPM_V, MiniCPM_Llama3_V
 from .minigpt4 import MiniGPT4
 from .mmalaya import MMAlaya
 from .monkey import Monkey, MonkeyChat
@@ -26,3 +26,5 @@ from .deepseek_vl import DeepSeekVL
 from .mgm import Mini_Gemini
 from .bunnyllama3 import BunnyLLama3
 from .vxverse import VXVERSE
+from .paligemma import PaliGemma
+from .qh_360vl import QH_360VL
